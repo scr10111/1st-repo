@@ -2,7 +2,7 @@
 int main(){
   float A[10][10], B[10][10], C[10][10];
   float somme=0;
-  int g, h, i, j, k=0, N, M, P;
+  int i, j, k=0, N, M, P;
   do{
     printf("entrez le nombre de lignes de A\n");
     scanf("%d", &N);
@@ -39,14 +39,14 @@ int main(){
   printf("La matrice A :\n");
   for (i=0; i<N; i++){
     for (j=0; j<M; j++){
-      printf("%.2f, \n", A[i][j]);
+      printf("%.2f, ", A[i][j]);
     }
     printf("\n");
   }
   printf("La matrice B :\n");
   for (i=0; i<M; i++){
     for (j=0; j<P; j++){
-      printf("%.2f, \n", B[i][j]);
+      printf("%.2f, ", B[i][j]);
     }
     printf("\n");
   }
